@@ -214,7 +214,7 @@ header > label{
 }
 @media screen and (min-width: 300px) and (max-width:499px) {
     header{
-        width: 100%;
+        width: 100vw;
     }
     header > label{
         display: unset;
