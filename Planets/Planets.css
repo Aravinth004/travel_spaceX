@@ -204,3 +204,42 @@ footer{
     height: 50px;
     /* background-color: rgba(252, 208, 151, 0.651); */
 }
+
+
+input{
+    display: none;
+}
+header > label{
+    display: none;
+}
+@media screen and (min-width: 300px) and (max-width:499px) {
+    header{
+        width: 100%;
+    }
+    header > label{
+        display: unset;
+    }
+    .hdr_nav{
+        position: fixed;
+        top: -200%;
+        flex-direction: column;
+        left: 0;
+        background-color: black;
+        height: 50vh;
+        width: 100%;
+    }
+    input:checked ~ .hdr_nav{
+        top: 50px;
+    }
+}
+@media screen and (min-width: 500px) and (max-width:699px) {
+    header{
+        width: 100vw;
+    }
+}
+
+@media screen and (min-width: 700px) and (max-width:1024px) {
+    header{
+        width: 100vw;
+    }
+}
