@@ -226,7 +226,7 @@ header > label{
         left: 0;
         background-color: black;
         height: 50vh;
-        width: 100%;
+        width: 100vw;
     }
     input:checked ~ .hdr_nav{
         top: 50px;
