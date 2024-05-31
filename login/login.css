@@ -167,7 +167,17 @@ position: relative;
 .con2:hover .login{
     z-index: -2;
 }
+input{
+    display: none;
+}
+header > label{
+    display: none;
+}
 @media screen and (min-width:500px) and (max-width:800px) {
+     header{
+        width: 100vw;
+    }
+    
     .con2{
         width: 70%;
         height: 50%;
@@ -177,6 +187,24 @@ position: relative;
     }
 }
 @media screen and (min-width:300px) and (max-width:499px) {
+    header{
+        width: 100%;
+    }
+    header > label{
+        display: unset;
+    }
+    .hdr_nav{
+        position: fixed;
+        top: -200%;
+        flex-direction: column;
+        left: 0;
+        background-color: black;
+        height: 50vh;
+        width: 100%;
+    }
+    input:checked ~ .hdr_nav{
+        top: 50px;
+    }
     .con1{
         flex-direction: column;
     }
